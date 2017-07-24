@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ticker: MyString
+  name: MyString
+  las_proce: 9.99
+
+two:
+  ticker: MyString
+  name: MyString
+  las_proce: 9.99
