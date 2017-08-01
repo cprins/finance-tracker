@@ -19,6 +19,7 @@
 
 .logout {
   padding-left: 0;
+  padding-right: 0;
 }
 
 .user-name {
@@ -34,4 +35,14 @@
     background-color: darken(#d9534f, 20%) !important;
   }
   
+}
+
+.center {
+ text-align: center;
+}
+
+.jumbotron {
+  background-image: asset-url('negocios.jpg');
+  background-size: cover;
+  height: 550px;
 }
