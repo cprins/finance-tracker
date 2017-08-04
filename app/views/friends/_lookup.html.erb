@@ -21,14 +21,14 @@
   <% if @users %>
     <% if @users.size > 0 %>
       <h3>Resultados de la búsqueda</h3>
-      <div id="friend-lookup-results" class="well results-block col-md-10">
+      <div id="friend-lookup-results" class="well results-block col-md-12">
         <table class="search-results-table col-md-12">
           <tbody>
             <% @users.each do |user| %>
               <tr>
-                <td><strong>Nombre:</strong> <%= user.full_name %></td>
-                <td><strong>Email:</strong> <%= user.email %></td>
-                <td><strong>Perfil:</strong> <%= link_to "View Profile", user_path(user),
+                <td><strong>Nombre: </strong> <%= user.full_name %></td>
+                <td><strong>Email: </strong> <%= user.email %></td>
+                <td><strong>Perfil: </strong> <%= link_to "View Profile", user_path(user),
                                                   class: "btn btn-xs btn-success" %>
                   <% if current_user.not_friends_with?(user.id) %>
                     <%= link_to "Agregar como amigo", add_friend_path(user: current_user, friend: user),
